@@ -43,7 +43,7 @@ public class Method_02_Test {
 
         @Override
         public String format() {
-            return "DaoA"+IDao.super.format();
+            return this.getClass().getSimpleName()+IDao.super.format();
         }
     }
     // end::DaoA[]
